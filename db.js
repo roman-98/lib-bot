@@ -1,12 +1,12 @@
 const {Sequelize} = require('sequelize');
 
 module.exports = new Sequelize(
-    'library_db',
-    'root',
-    'Jor@79253*/prof1',
+    'database',
+    'user',
+    'password',
     {
         host: 'localhost',
-        port: 5487,
+        port: 1111,
         dialect: 'postgres',
     }
 )

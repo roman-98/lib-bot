@@ -3,7 +3,7 @@ const {keyBoard} = require('./options');
 const sequelize = require('./db');
 
 
-const TOKEN = '1080884640:AAGEU_eNkThOcc0AzlGOpUaMbD_m2O7z-xs'
+const TOKEN = 'token'
 //import {TOKEN} from './config.js'
 
 const bot = new TelegramApi(TOKEN, {polling: true})
