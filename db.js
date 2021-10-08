@@ -2,11 +2,15 @@ const {Sequelize} = require('sequelize');
 
 module.exports = new Sequelize(
     'database',
-    'user',
+    'username',
     'password',
     {
-        host: 'localhost',
+        host: 'host',
         port: 1111,
         dialect: 'dialect',
     }
 )
+
+
+
+
