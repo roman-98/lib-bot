@@ -44,19 +44,11 @@ const start = async () => {
         finally {
             if (!messages.length) {
                 bot.sendMessage(chatId, 'Введи автора, назву книги чи будь-якого іншого видання. Якщо я не знайду потрібної Тобі літератури, спробуй конкретизувати запит або піди у бібліотеку (м.Львів, вул.Драгоманова 5(17)). Можливо потрібна Тобі література є в іншому каталозі, якого я не знаю.');
-                //return;
             }
             messages.forEach(message =>
                 bot.sendMessage(chatId, message, /*orderBook*/)); // Finally iterate that array and send
         }
     });
-
-    /*bot.on('callback_query', msg => {
-        const data = msg.data;
-        const chatId = msg.message.chat.id;
-        bot.sendMessage(chatId, `${data}`);
-        console.log(msg);
-    })*/
 }
 
 start();
