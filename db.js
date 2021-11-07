@@ -6,7 +6,7 @@ module.exports = new Sequelize(
     'password',
     {
         host: 'host',
-        port: 1111,
+        port: 1234,
         dialect: 'dialect',
     }
 )
