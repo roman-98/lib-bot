@@ -50,6 +50,13 @@ const start = async () => {
                 bot.sendMessage(chatId, message, /*orderBook*/)); // Finally iterate that array and send
         }
     });
+
+    /*bot.on('callback_query', msg => {
+        const data = msg.data;
+        const chatId = msg.message.chat.id;
+        bot.sendMessage(chatId, `${data}`);
+        console.log(msg);
+    })*/
 }
 
 start();
