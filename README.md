@@ -6,5 +6,4 @@ This program is designed for students of Ivan Franko National University of Lviv
 
 ![img](https://images2.imgbox.com/81/e8/6QVSuRla_o.jpg)
 ![img](https://images2.imgbox.com/26/d8/l67VB5Va_o.jpg)
-![img](https://images2.imgbox.com/dc/5a/uAZwrrV0_o.jpg)
 ![img](https://images2.imgbox.com/24/99/45akHrwI_o.jpg)
