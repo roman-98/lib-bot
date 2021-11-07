@@ -31,10 +31,10 @@ const start = async () => {
             let [rows] = await sequelize.query(query);
 
             while(rows.length) {
-                const chunk = rows.splice(0, BOOKS_PER_MESSAGE); // [1]
-                const books = chunk.map(row => row.book);        // [2]
-                const message = books.join("\n");                // [3]
-                messages.push(message);                          // [4]
+                const chunk = rows.splice(0, BOOKS_PER_MESSAGE); // [1] Chunk rows that came from db to N items by reducing it using splice
+                const books = chunk.map(row => row.book);        // [2] Then that chunk to array of book names using map
+                const message = books.join("\n");                // [3] Convert chunk of book names to message by joining by some logic in our case with newline symbol
+                messages.push(message);                          // [4] Push it to messages array
             }
 
         }
@@ -47,7 +47,7 @@ const start = async () => {
                 //return;
             }
             messages.forEach(message =>
-                bot.sendMessage(chatId, message, /*orderBook*/)); // [5]
+                bot.sendMessage(chatId, message, /*orderBook*/)); // [5] Finally iterate that array and send
         }
     });
 
